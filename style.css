@@ -1,0 +1,191 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  #taskInput, #dueDateInput, #searchInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  #searchInput {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3730a3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f9fafb;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  li span.due {
+    font-size: 12px;
+    color: #6b7280;
+    display: block;
+    margin-top: 4px;
+  }
+  
+  li.completed {
+    opacity: 0.7;
+  }
+  
+  .completed .text {
+    text-decoration: line-through;
+  }
+  
+  .completed .delete-btn {
+    opacity: 0.5;
+  }
+  
+  .completed .delete-btn:hover {
+    opacity: 1;
+  }
+  
+  .delete-btn {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .edit-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .edit-input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .clear-btn {
+    width: 100%;
+    background-color: #ef4444;
+    margin-top: 10px;
+  }
+  
+  .clear-btn:hover {
+    background-color: #b91c1c;
+  }
+  
+  .bottom-section {
+    margin-top: 15px;
+  }
+  
+  #completedCount {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .mode-btn {
+    width: 100%;
+    background-color: #64748b;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background: #1e293b;
+    color: white;
+  }
+  
+  body.dark-mode .container {
+    background: #334155;
+  }
+  
+  body.dark-mode input,
+  body.dark-mode button,
+  body.dark-mode li {
+    background: #475569;
+    color: white;
+    border-color: #64748b;
+  }
+  
+  body.dark-mode li.completed {
+    opacity: 0.5;
+  }
+  
+  body.dark-mode .text,
+  body.dark-mode .due,
+  body.dark-mode h1,
+  body.dark-mode .mode-btn {
+    color: white;
+  }
+  
+  body.dark-mode .completed .delete-btn {
+    opacity: 0.5;
+  }
+  
+  /* Checkbox Styling */
+  .task-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
