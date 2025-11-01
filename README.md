@@ -1,2 +1,2 @@
 # To-Do-List
-  A personal portfolio website showcasing my projects, skills, and achievements in web development. 
+  A responsive task management application built using HTML, CSS, and JavaScript. It allows users to add, delete, and mark tasks as completed, with features like dark mode, search filter, due dates, and local storage for saving tasks.
